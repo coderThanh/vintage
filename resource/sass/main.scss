@@ -1,23 +1,44 @@
-$color-logo             : #64c29e;
-$color-icon-twitter     : #56c7ee;
-$color-icon-facebook    : #537bbd;
-$color-icon-mail        : #eb5755;
-$color-text-title       : #4d4959;
-$color-text-decription  : #848789;
-$color-place-holder     : #929292;
-$color-text-title-img   : white;
+$color-logo                         : #64c29e;
+$color-icon-twitter                 : #56c7ee;
+$color-icon-facebook                : #537bbd;
+$color-icon-mail                    : #eb5755;
+$color-border-input                 : #d3d7d9;
+$color-place-holder                 : #929292;
 
-$background-01          : #ffffff;
-$background-02          : #f7f7f7;
-$background-03          : #282f35;
+$color-text-title-link              : #4d4959;
+$color-text-decription              : #848789;
+$color-text-title-img               : white;
 
-$font-text-title                : 'lato bold';
-$font-text-decription           : 'lato regular';
+$color-background-01                : #ffffff;
+$color-background-02                : #f7f7f7;
+$color-background-03                : #282f35;
 
+$font-size-navigation               : 17px;
+$font-size-article-decription       : 22px;
+$font-size-btn-small                : 19px;
+$font-size-input                    : 26px;
+$font-size-title                    : 2.4rem;
+$font-size-title-small              : 2rem;
+$font-size-decription               : 2rem;
+$font-size-decription-small         : 1.8rem;
+
+$font-family-main                   :'Lato', sans-serif;
+
+$width-body                 : 1600px;
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i&display=swap');
 
 :root {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    font-size: 62.5%;
 
 }
+
+body {
+    font-family: $font-family-main;
+}
+
+@import './header';
+@import './body';

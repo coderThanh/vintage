@@ -1,4 +1,177 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i&display=swap");
 :root {
   box-sizing: border-box;
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Lato", sans-serif; }
+
+/*             Header                */
+.main__header {
+  min-height: 800px;
+  background-image: url("../img/img-bg-01.png");
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 1.7rem; }
+
+.nav__website {
+  padding-top: 3rem; }
+
+.nav__list {
+  display: flex;
+  width: 100%;
+  padding: 0px;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin-bottom: 0px; }
+
+.nav__item {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-right: 4rem;
+  padding-left: 4rem;
+  position: relative; }
+  .nav__item:first-child::after {
+    content: '.';
+    display: block;
+    position: absolute;
+    top: -0.3rem;
+    right: 0;
+    font-size: 2rem; }
+  .nav__item:last-child::before {
+    content: '.';
+    display: block;
+    position: absolute;
+    top: -0.3rem;
+    left: 0;
+    font-size: 2rem; }
+
+.nav__link {
+  color: #4d4959;
+  transition: all 0.3s; }
+  .nav__link:hover {
+    text-decoration: none;
+    color: #64c29e; }
+
+/*           Main Content              */
+.feature__img-bg-01 {
+  background-image: url("../img/img-bycle-large.png");
+  height: 60rem; }
+
+.feature__header-img-01 {
+  height: 33%;
+  width: 100%;
+  background-image: url("../img/img-bycle-yen-xe.png"); }
+
+.feature__img-bg-02 {
+  background-image: url("../img/img-bycle-black.png");
+  height: 60rem; }
+
+.feature__header-img-02 {
+  height: 33%;
+  width: 100%;
+  background-image: url("../img/img-bycle-yen-xe-black.png"); }
+
+.feature__img-bg-03 {
+  background-image: url("../img/img-bycle-suon-xe-red.png");
+  height: 60rem; }
+
+.feature__img-bg-04 {
+  background-image: url("../img/img-bycle-red-mini.png");
+  height: 60rem; }
+
+.feature__header-img-03 {
+  height: 33%;
+  width: 100%;
+  background-image: url("../img/img-bycle-banh-xe.png"); }
+
+.feature__icon--top {
+  height: fit-content;
+  width: fit-content; }
+
+.feature__header {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 5rem 5rem 8rem;
+  position: relative; }
+
+.feature__header--small {
+  background-color: #ffffff;
+  height: 67%;
+  width: 100%;
+  text-align: center;
+  padding: 3rem 3rem; }
+  .feature__header--small::after {
+    content: ' ';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+    border-top: 1rem solid #ffffff;
+    position: absolute;
+    bottom: -1.5rem;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .feature__header--small .feature__title {
+    font-size: 2rem; }
+  .feature__header--small .feature__decription {
+    font-size: 1.8rem;
+    width: 100%;
+    text-align: justify; }
+
+.feature__title {
+  color: #4d4959;
+  width: 100%;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.4rem;
+  margin-bottom: 2.5rem; }
+
+.feature__decription {
+  color: #848789;
+  font-size: 2rem;
+  font-weight: lighter;
+  text-align: center;
+  width: 80%;
+  max-height: 50%;
+  overflow: hidden;
+  text-overflow: clip; }
+
+.feature__item {
+  display: flex;
+  flex-wrap: wrap; }
+
+.feature__img {
+  position: relative; }
+
+.feature__img-bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.feature__img-branch {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.feature__context {
+  height: 60rem;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap; }
+
+.order-01 {
+  order: 1; }

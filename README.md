@@ -19,5 +19,8 @@ Thời gian hoàn thành project: ,
 
 Người thực hiện: Coder Thành
 
+File resource PSD:
+    https://cdn.dribbble.com/users/514435/screenshots/1491069/attachments/223479/YEBO_dribbble01_Big.jpg
+
 Deploy sản phẩm tại:
     'Chua có'

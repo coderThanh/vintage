@@ -10,7 +10,9 @@ $color-logo                         : #64c29e;
     -webkit-background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
     font-size: $font-size-navigation;
+    position: relative;
 }
 
 .nav__website {
@@ -31,8 +33,8 @@ $color-logo                         : #64c29e;
 .nav__item {
     font-weight: bold;
     text-transform: uppercase;
-    padding-right: 4rem;
-    padding-left: 4rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
     position: relative;
 
     &:first-child::after {
@@ -62,4 +64,59 @@ $color-logo                         : #64c29e;
         text-decoration: none;
         color: $color-logo;
     }
+}
+
+.logo__mobile {
+    position: absolute;
+    top: 3rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: none;
+}
+
+.btn__collapse {
+    position: fixed;
+    font-size: 2rem;
+    top: 2.5rem;
+    right: 2.5rem;
+    transition: 0.3s;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4.5rem;
+    background-color: $color-logo;
+    color: white;
+    border-radius: 50%;
+    width: 4.5rem;
+    transition: 0.4s linear;
+
+    &:active {
+        transform: scale(0.8);
+    }
+
+}
+
+.icon__back {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: bold;
+    display: none;
+    transition: 0.4s linear;
+}
+
+.inp__collapse {
+    &:checked ~ .nav__website {
+        transform: translateX(0);
+    }
+
+    &:checked ~ .btn__collapse .icon__back {
+        display: inline;
+    }
+
+    &:checked ~ .btn__collapse .icon__show {
+        display: none;
+    }
+
 }

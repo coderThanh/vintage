@@ -1,0 +1,33 @@
+$color-background-03                : #282f35;
+$font-size-btn-small                : 1.9rem;
+
+/*          Feeature__ discover           */
+.feature__discover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 7rem;
+    background-color: $color-background-03;
+}
+
+.discover__link {
+    color: white;
+    font-size: $font-size-btn-small;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    font-weight: bold;
+    border: solid 1px white;
+    padding: 1.5rem 4rem;
+    transition: 0.3s;
+    text-align: center;
+
+    &:hover {
+        color: white;
+        text-decoration: none;
+        transform: scale(1.1);
+    }
+
+    &:active {
+        transform: scale(1);
+    }
+}

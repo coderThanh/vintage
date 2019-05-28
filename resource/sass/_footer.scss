@@ -1,0 +1,94 @@
+$color-icon-twitter                 : #56c7ee;
+$color-icon-facebook                : #537bbd;
+$color-icon-mail                    : #eb5755;
+$color-background-02                : #f7f7f7;
+$color-text-decription              : #848789;
+
+$font-size-footer                   : 1.3rem;
+$font-size-footer-lg                : 1.5rem;
+
+/*             Footer                 */
+
+.main__footer {
+    background-color: $color-background-02;
+    color: $color-text-decription;
+}
+
+.footer__content {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__address {
+    margin-bottom: 2rem;
+}
+
+.footer__city {
+    font-weight: bold;
+    font-size: $font-size-footer-lg;
+}
+
+.footer__text {
+    font-style: italic;
+    font-size:$font-size-footer;
+}
+
+.footer__icon-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        transition: 0.3s;
+    }
+
+    a:hover {
+        text-decoration: none;
+        transform: scale(1.1);
+    }
+
+    a:active {
+        transform: scale(0.9);
+    }
+
+    & a:nth-child(2) {
+        margin: 0rem 2rem;
+    }
+}
+
+.footer__icon {
+    font-size: $font-size-footer;
+    color: white;
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    background-color: wheat;
+    border-radius: 50%;
+    
+
+
+}
+
+.icon__twitter--circle {
+    background-color: $color-icon-twitter;
+}
+
+.icon__facebook--circle {
+    background-color: $color-icon-facebook;
+}
+
+.icon__email--circle {
+    background-color: $color-icon-mail;
+}
+
+.footer__author {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}

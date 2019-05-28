@@ -13,14 +13,17 @@ $color-background-01                : #ffffff;
 $color-background-02                : #f7f7f7;
 $color-background-03                : #282f35;
 
-$font-size-navigation               : 17px;
-$font-size-article-decription       : 22px;
-$font-size-btn-small                : 19px;
-$font-size-input                    : 26px;
+$font-size-navigation               : 1.7rem;
+$font-size-article-decription       : 2.2rem;
+$font-size-btn-small                : 1.9rem;
+$font-size-input                    : 2rem;
 $font-size-title                    : 2.4rem;
 $font-size-title-small              : 2rem;
 $font-size-decription               : 2rem;
 $font-size-decription-small         : 1.8rem;
+$font-size-decription-lg            : 3.2rem;
+$font-size-footer                   : 1.3rem;
+$font-size-footer-lg                : 1.5rem;
 
 $font-family-main                   :'Lato', sans-serif;
 
@@ -41,4 +44,10 @@ body {
 }
 
 @import './header';
-@import './body';
+@import './feature';
+@import './carousel';
+@import './shop';
+@import './discover';
+@import './email';
+@import './footer';
+@import './queries';

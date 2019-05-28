@@ -1,0 +1,76 @@
+$color-logo                         : #64c29e;
+$color-border-input                 : #d3d7d9;
+$color-place-holder                 : rgba(146, 146, 146, 0.6);
+$color-text-decription              : #848789;
+
+$font-size-input                    : 2rem;
+$font-size-decription-lg            : 3.2rem;
+
+/*          Feature get Email           */
+
+.feature__get-mail {
+    padding: 5rem 4rem;
+    .feature__header {
+        background: transparent;
+    }
+}
+
+.logo {
+    margin-bottom: 2rem;
+}
+
+.get-mail__text {
+    font-size: $font-size-decription-lg;
+    font-weight: lighter;
+    font-style: italic;
+    color: #848789;
+    margin-bottom: 2rem;
+}
+
+.feature__form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: $color-place-holder;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+    color: $color-place-holder;
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+    color: $color-place-holder;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+    color: $color-place-holder;
+    }
+}
+
+.feature__input {
+    font-size: $font-size-input;
+    border: solid 1px $color-border-input;
+    margin-right: 1rem;
+    padding: 1rem 2rem;
+    width: 30%;
+
+}
+
+
+
+.feature__submit {
+    text-transform: capitalize;
+    font-size: $font-size-input;
+    background-color: $color-logo;
+    color: white;
+    border: none;
+    padding: 1rem 3rem;
+    transition: 0.3s;
+    outline: none !important;
+
+    &:active {
+        transform: scale(0.9);
+    }
+}

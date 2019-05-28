@@ -1,0 +1,85 @@
+
+
+/*============ Responsive ============== */
+
+@media only screen and (min-width:768px) {
+    .btn__collapse {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:991px) {
+
+/*=============== Header ====================*/    
+    .nav__item {
+        padding: 0rem 3rem;
+    }
+}
+
+@media only screen and (max-width:767px) {
+/*=============== Header ====================*/ 
+    .logo__mobile {
+        display: block;
+    }
+
+    .nav__website {
+        position: fixed;
+        width: 50%;
+        height: 100%;
+        right: 0rem;
+        top: 0rem;
+        z-index: 12;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 10rem 0rem;
+        transition: 0.3s linear;
+        transform: translateX(100%)
+    }
+
+    .nav__list {
+        flex-direction: column;
+
+    }
+    
+    .nav__item {
+        padding: 2rem 0rem;
+        width: 100%;
+        text-align: center;
+
+        &:first-child::after, &:last-child::before {
+            display: none;
+        } 
+    }
+
+    .nav__item--logo {
+        display: none;
+    }
+
+    .nav__link {
+        color: white;
+    }
+
+    /*================== feature get email ============= */
+    .feature__input {
+        width: 60%;
+    }
+
+    /* ================ footer ========================*/
+    .footer__address {
+
+    }
+
+    .footer__author {
+        justify-content: flex-start;
+    }
+
+    .footer__icon-group {
+        justify-content: flex-start;
+    }
+}
+
+@media only screen and (max-width:575px) {
+    .feature__input {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}

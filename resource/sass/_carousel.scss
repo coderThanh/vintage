@@ -1,0 +1,79 @@
+/*            Carousel                */
+$color-background-02                : #f7f7f7;
+$color-icon-twitter                 : #56c7ee;
+$color-text-decription              : #848789;
+
+$font-size-title                    : 2.4rem;
+$font-size-decription               : 2rem;
+
+
+.feature__carousel {
+    background-color: $color-background-02;
+}
+
+.carousel__body {
+
+}
+
+.carousel__context {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 5rem;
+}
+
+.carousel__icon {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.carousel__icon--primary {
+    color: $color-icon-twitter;
+}
+
+.carousel__title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: $font-size-title;
+    text-align: center;
+    letter-spacing: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+
+.carousel__author {
+    padding: 0rem 0.4rem;
+}
+
+.carousel__time {
+    color: $color-text-decription;
+    font-weight: lighter;
+}
+
+.carousel__decription {
+    color: $color-text-decription;
+    font-size: $font-size-decription;
+    text-align: center;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.carousel__list {
+    bottom: 2rem !important;
+}
+
+.carousel__item {
+    background-color: white;
+    border: solid 1px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    outline: none !important;
+    margin: 0rem 1rem;
+
+    &.active {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+}

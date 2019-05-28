@@ -1,4 +1,4 @@
-/*           Main Content              */
+/*           Feature Content              */
 $color-background-01                : #ffffff;
 $color-background-02                : #f7f7f7;
 $color-text-title-link              : #4d4959;
@@ -14,75 +14,36 @@ $heigth-header-small                : 67%;
 $heigth-header-img                  : 100% - $heigth-header-small ;
 
 $url-img-init                       : '../img/';
-
 $url-img-01                         : $url-img-init  + "img-bycle-large.png";
-$url-header-img-01                  : $url-img-init  + "img-bycle-yen-xe.png";
 $url-img-02                         : $url-img-init  + "img-bycle-black.png";
+$url-img-03                         : $url-img-init  + "img-bycle-suon-xe-red.png";
+$url-img-04                         : $url-img-init  + "img-bycle-red-mini.png";
+$url-header-img-01                  : $url-img-init  + "img-bycle-yen-xe.png";
 $url-header-img-02                  : $url-img-init  + "img-bycle-yen-xe-black.png";
-
-$url-img-03                      : $url-img-init  + "img-bycle-suon-xe-red.png";
-$url-img-04                      : $url-img-init  + "img-bycle-red-mini.png";
 $url-header-img-03                  : $url-img-init  + "img-bycle-banh-xe.png";
 
-// $list-url-items                    : ('number': 01 , 'url-img' : $url-img-01, 'url-header-img': $url-header-img-01  ), ('number': 02 , 'url-img' : $url-img-02, 'url-header-img': $url-header-img-02  );
+$list-img   : ('01': $url-img-01, '02': $url-img-02, '03': $url-img-03, '04': $url-img-04);
+$list-header-img : ('01': $url-header-img-01, '02': $url-header-img-02, '03': $url-header-img-03);
 
-// @each $item in $list-url-items {
-//     .feature__img-bg-#{map-get($item, 'number')} {
-//         background-image: url( map-get($item, 'url-img') );
-//         height: $height-img-bg;
-//         @extend  %feature__img-bg;
-//     }
-    
-//     .feature__header-img-#{map-get($item, 'number')} {
-//         height: $heigth-header-img;
-//         width: 100%;
-//         background-image: url(map-get($item, 'url-header-img'));
-//         @extend  %feature__img-bg;
-//     }
-// }
-
-.feature__img-bg-01 {
-    background-image: url($url-img-01);
-    height: $height-img-bg;
+@each $key, $value in $list-img {
+    .feature__img-bg-#{ $key } {
+        background-image: url(#{ $value });
+        height: $height-img-bg;
+    }
 }
 
-.feature__header-img-01 {
-    height: $heigth-header-img;
-    width: 100%;
-    background-image: url($url-header-img-01);
+@each $key, $value in $list-header-img {
+    .feature__header-img-#{ $key } {
+        background-image: url(#{ $value });
+        height: $heigth-header-img;
+        width: 100%;
+    }
 }
-
-.feature__img-bg-02 {
-    background-image: url($url-img-02);
-    height: $height-img-bg;
-}
-
-.feature__header-img-02 {
-    height: $heigth-header-img;
-    width: 100%;
-    background-image: url($url-header-img-02);
-}
-
-.feature__img-bg-03 {
-    background-image: url($url-img-03);
-    height: $height-img-bg;
-}
-
-.feature__img-bg-04 {
-    background-image: url($url-img-04);
-    height: $height-img-bg;
-}
-
-.feature__header-img-03 {
-    height: $heigth-header-img;
-    width: 100%;
-    background-image: url($url-header-img-03);
-}
-
 
 .feature__icon--top {
     height: fit-content;
     width: fit-content;
+    transition: 0.7s;
 }
 
 .feature__header {
@@ -92,8 +53,12 @@ $url-header-img-03                  : $url-img-init  + "img-bycle-banh-xe.png";
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 5rem 5rem 8rem;
+    padding: 5rem 0rem 8rem;
     position: relative;
+
+    &:hover .feature__icon--top {
+        transform: scale(1.4);
+    }
 }
 
 .feature__header--small {

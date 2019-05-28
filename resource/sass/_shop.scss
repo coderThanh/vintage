@@ -1,0 +1,126 @@
+$color-logo                         : #64c29e;
+
+$url-img-init   : '../img/';
+$url-img-small-01  : $url-img-init + 'img-bycle-yen-xe-black-02.png';
+$url-img-small-02  : $url-img-init + 'img-bycle-list-yen-xe.png';
+$url-img-small-03  : $url-img-init + 'img-bycle-yen-xe-da.png';
+$url-img-small-04  : $url-img-init + 'img-tui-sach.png';
+$url-img-lg-01  : $url-img-init + 'img-bycle-yen-xe-black-03.png';
+$url-img-lg-02  : $url-img-init + 'img-shop.png';
+$url-img-lg-column-01  : $url-img-init + 'img-bycle-tui-sach.png';
+$url-img-lg-column-02  : $url-img-init + 'img-bycle-black-half.png';
+
+$list-img-small         : ('01': $url-img-small-01, '02': $url-img-small-02, '03': $url-img-small-03, '04': $url-img-small-04);
+$list-img-lg            : ('01': $url-img-lg-01, '02': $url-img-lg-02);
+$list-img-lg-column     : ('01': $url-img-lg-column-01, '02': $url-img-lg-column-02);
+
+
+@each $key, $value in $list-img-small {
+    .shop__img--small-#{ $key } {
+        background-image: url( $value );
+    }
+}
+
+@each $key, $value in $list-img-lg {
+    .shop__img--lg-#{ $key } {
+        background-image: url( $value );
+    }
+}
+
+@each $key, $value in $list-img-lg-column {
+    .shop__img--lg-column-#{ $key } {
+        background-image: url( $value );
+    }
+}
+
+.shop__list {
+    list-style-type: none;
+    padding: 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    margin-bottom: 0rem;
+
+}
+
+.shop__item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 60rem;
+    width: 100%;
+
+    &:last-child .shop__img--small{
+        order: 2;
+    }
+}
+
+.shop__img--small {
+    width: 50%;
+    height: 50%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.shop__img--lg {
+    width: 100%;
+    height: 50%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.shop__img--lg-column {
+    width: 50%;
+    height: 100%;
+}
+
+.shop__parent {
+    overflow: hidden;
+    &:hover .shop__branch {
+        opacity: 1;
+    }
+}
+
+.shop__branch {
+    background-color: rgba(100, 194, 158, 0.8);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.4s;
+    opacity: 0;
+
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &:active .shop__title {
+        transform: scale(0.9);
+    }
+    &:active  .shop__icon {
+        transform: scale(0.9);
+    }
+}
+
+.shop__icon {
+    transition: 0.3s;
+    width: 10rem;
+    height: auto;
+}
+
+.shop__title {
+    transition: 0.3s;
+    color: white;
+    font-size: 2.5rem;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
